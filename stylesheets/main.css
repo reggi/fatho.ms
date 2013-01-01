@@ -1,0 +1,10 @@
+body{background:#111111;}
+.title{text-transform:uppercase;display:inline-block;font-weight:700;position:absolute;font-family:'PT Mono',sans-serif;color:#FFBF00;background:#111;margin:0;padding:0;font-size:55px;line-height:55px;letter-spacing:10px;top:45px;left:125px;}
+h2,h3,h4{font-family:'PT Mono',sans-serif;color:#FFBF00;}
+.layer{width:100%;background:#111;overflow:hidden;}
+.layer#head{background:#111;height:500px;border-bottom:solid 12px #FFBF00;position:relative;}
+.layer#head .contents{position:relative;width:435px;margin:auto;margin-top:200px;cursor:default;}
+.layer#intro{padding:50px 0px;}
+.layer#footer{padding:50px 0px;}
+.layer#footer p{text-align:center;}
+p{font-family:'PT Mono',sans-serif;color:#ffbf00;}
