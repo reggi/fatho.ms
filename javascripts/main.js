@@ -1,3 +1,7 @@
+analytics.initialize({
+    'Google Analytics' : 'UA-37434474-1'
+});
+
 var stars = function(){
     $(".multiuniverse").stars({
         count:100,
