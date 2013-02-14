@@ -1,5 +1,10 @@
+html{
+    height:100%;
+}
+
 body{
-    background: #111111;
+    background: red;
+    height:100%;
 }
 
 .title{
@@ -32,17 +37,31 @@ h2,h3,h4{
 
 .layer#head{
     background:#111;
-    height:500px;
-    border-bottom:solid 12px #FFBF00;
+    height:100%;
     position:relative
 }
 
+.layer#intro{
+    border-top:solid 12px #FFBF00;
+    position:absolute;
+    bottom:0
+}
+
 .layer#head .contents{
+    /*
     position:relative;
     width:435px;
+    top:50px;
     margin:auto;
-    margin-top:200px;
     cursor:default
+    */
+    position:absolute;
+    bottom:50%;
+    width:435px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .layer#intro{
@@ -50,14 +69,21 @@ h2,h3,h4{
 }
 
 .layer#footer{
-    padding:50px 0px;
+    padding:30px 0px;
 }
 
-.layer#footer p{
+.layer#footer .span12{
     text-align: center
+}
+
+.author{
+    text-align: right;
+    font-family:'PT Mono',sans-serif;
+    color:#FFBF00
 }
 
 p{
     font-family:'PT Mono',sans-serif;
     color:#FFBF00
 }
+
