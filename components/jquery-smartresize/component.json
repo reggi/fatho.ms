@@ -1,9 +1,0 @@
-{
-  "name": "jquery-smartresize",
-  "version": "0.0.0",
-  "commit": "f1798f24c63b3857151116bf8933e7700321e2e5",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/louisremi/jquery-smartresize.git"
-  }
-}

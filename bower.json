@@ -1,0 +1,15 @@
+{
+  "name": "fatho.ms",
+  "version": "0.0.0",
+  "homepage": "http://fatho.ms",
+  "authors": [
+    "reggi <thomas@reggi.com>"
+  ],
+  "main": "index.html",
+  "license": "private",
+  "private": true,
+  "dependencies": {
+    "jquery-backstretch": "git@github.com:srobbin/jquery-backstretch.git#~2.0.4",
+    "bootstrap": "~3.0.3"
+  }
+}

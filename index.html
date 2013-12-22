@@ -9,63 +9,45 @@
         <title>fathoms</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="stylesheets/style.css">
-        <script src="components/modernizr/modernizr.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700|Radley' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <style>
+            body{background: #000;}
+            #logo h1{
+                -webkit-font-smoothing: antialiased;
+                text-align: center;
+                font-family: 'Playfair Display SC', serif;
+                font-size: 100px;
+                margin-top: 250px;
+                color: #FFF;
+            }
+        </style>
     </head>
-    <body>
+    <body data-bg-image="http://www.universe-beauty.com/albums/space/Star-field-hubble-deep-3.JPG">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="layer" id="head">
-            <div class="multiuniverse"></div>
-            <div class="contents">
-                <div class="logo">
-                    <div class="holder">
-                        <div class="yellow"><div class="hex">&#x2B22;</div></div>
-                        <div class="blue"><div class="hex">&#x2B22;</div></div>
-                        <div class="fandango"><div class="hex">&#x2B22;</div></div>
+        <div class="container" >
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="logo">
+                        <h1>fathoms</h1>
                     </div>
                 </div>
-                <h1 class="title">Fathoms</h1>
             </div>
         </div>
 
-        <div class="layer" id="intro">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="span6">
-                        <div class="row-fluid">
-                            <div class="span12">
-                                <p>"What a computer is to me is the most remarkable tool that we have ever come up with. It's the equivalent of a bicycle for our minds."</p>
-                            </div>
-                            <div class="span12 author">
-                                -Steve Jobs
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="span6">
-                        <div class="row-fluid">
-                            <div class="span12">
-                                <p>"I think everyone should learn how to program a computer, because it teaches you how to think..."</p>
-                            </div>
-                            <div class="span12 author">
-                                -Steve Jobs
-                            </div>
-                        </div>                       
-                    </div>
-                </div>
-            </div>            
-        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="./bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
+        <script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="components/jquery/jquery.js"><\/script>')</script>
-        <script src="javascripts/script.js"></script>
+        $("[data-bg-image]").each(function(index, value){
+            var img = $(value).attr("data-bg-image");
+            $(value).backstretch(img);
+        });
+
+        </script>
+
     </body>
 </html>
